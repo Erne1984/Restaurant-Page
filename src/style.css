@@ -1,3 +1,41 @@
-button{
-    color: red;
+@font-face {
+    font-family: "red_october";
+    src: url('./assets/fonts/red-october/Red\ October.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "red_october", "Poppins", sans-serif;
+}
+
+header nav{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+header nav button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 5px;    
+}
+
+header nav button:hover{
+    color: #b17c24;
+}
+
+.button-actived{
+    color: #b17c24;
+    border-bottom: 2px solid #b17c24;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
 }
