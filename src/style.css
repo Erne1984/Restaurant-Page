@@ -33,7 +33,7 @@ header .logo{
 
 header nav{
     display: flex;
-    gap: 1px;
+    gap: 3px;
     text-align: center;
     margin-top: 4px;
     margin-bottom: 4px;

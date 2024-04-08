@@ -3,6 +3,8 @@ import './home.css';
 const divHome = document.createElement("div");
 const title = document.createElement("h1");
 const content = document.createElement("p");
+const btnBox = document.createElement("div");
+const button = document.createElement("button");
 
 divHome.classList.add("home");
 
@@ -14,8 +16,15 @@ content.textContent = `Explore as maravilhas gastronômicas da cozinha mais revo
 
 content.classList.add('text');
 
+btnBox.classList.add("btn-box")
+btnBox.appendChild(button)
+
+button.classList.add("btn-menu");
+button.textContent = "Menu"
+
 
 divHome.appendChild(title);
 divHome.appendChild(content);
+divHome.appendChild(btnBox);
 
 export default divHome;
