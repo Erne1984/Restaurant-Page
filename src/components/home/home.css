@@ -1,3 +1,11 @@
 h1{
+    font-family: 'red_october';
+    text-align: center;
+    color: yellow;
+}
+
+.text{
+    margin-top: 20px;
     text-align: center;
 }
+

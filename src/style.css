@@ -3,6 +3,11 @@
     src: url('./assets/fonts/red-october/Red\ October.ttf');
 }
 
+@font-face {
+    font-family: "fyodor";
+    src: url("./assets/fonts/fyodor/fyodor/web/Fyodor-BoldOblique.woff");
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -34,7 +39,18 @@ header nav button:hover{
     border-bottom: 2px solid #b17c24;
 }
 
+.fundo{
+    opacity: 0.8;
+    background: url(./assets/imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 2rem 0;
+}
+
 .content{
+    font-family: "fyodor";
     width: 80%;
     margin: 0 auto;
     margin-top: 25px;
