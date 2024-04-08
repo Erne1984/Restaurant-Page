@@ -1,0 +1,9 @@
+.about{
+    display: flex;
+    background-color: #fff;
+}
+
+.img-about{
+    height: 500px;
+    background: url("../../assets/imgs/background2.jpg");
+}
