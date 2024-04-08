@@ -12,9 +12,10 @@ content.textContent = `Explore as maravilhas gastronômicas da cozinha mais revo
     Pratos capazes de alegrar os paladares e estomâgos de trabalhadores do mundo todo!
     Trabalhadores do mundo, uni-vós!`;
 
-content.classList.add('text')
+content.classList.add('text');
+
 
 divHome.appendChild(title);
-divHome.appendChild(content)
+divHome.appendChild(content);
 
 export default divHome;

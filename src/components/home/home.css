@@ -1,11 +1,26 @@
+.home{
+    z-index: 1;
+}
+
 h1{
     font-family: 'red_october';
     text-align: center;
-    color: yellow;
+    color: #ffd64a;
 }
 
 .text{
+    color: #ffff;
     margin-top: 20px;
     text-align: center;
+}
+
+.img{
+    margin-top: 15px;
+    width: 100%;
+    height: 400px;
+    background: url(../../assets/imgs/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: cover;*/
 }
 

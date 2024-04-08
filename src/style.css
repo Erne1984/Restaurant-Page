@@ -15,43 +15,76 @@
     font-family: "red_october", "Poppins", sans-serif;
 }
 
-header nav{
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 80%;
-    text-align: center;
     margin: 0 auto;
-    margin-top: 4px;
 }
 
-header nav button{
+header .logo{
+    height: 94px;
+    width: 140px;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    gap: 1px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    list-style: none;
+}
+
+header nav li{
     cursor: pointer;
     border: none;
-    background-color: white;
+    color: #ffff;
     font-size: 1.2rem;
     padding: 5px;    
 }
 
-header nav button:hover{
-    color: #b17c24;
+header nav li:hover{
+    color: #ffd64a;
 }
 
-.button-actived{
-    color: #b17c24;
-    border-bottom: 2px solid #b17c24;
+.tab-actived{
+    color: #ffd64a;
+    border-bottom: 2px solid #ffd64a;
 }
 
-.fundo{
-    opacity: 0.8;
-    background: url(./assets/imgs/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding: 2rem 0;
-}
-
-.content{
+.content {
+    position: relative;
+    z-index: 2;
     font-family: "fyodor";
     width: 80%;
     margin: 0 auto;
     margin-top: 25px;
+}
+
+
+.back {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: url(assets/imgs/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;  
 }
