@@ -1,66 +1,97 @@
-.contact{
+.container-contact {
+    background-color: #1c1c1c;
+    width: 100%;
+}
+
+.contact {
     display: flex;
-    justify-content: center;
-    background-color: #1c1c1c;  
+    justify-content: space-between;
     padding: 5rem 0;
     gap: 30px;
+    margin: 0 auto;
+    width: 85%;
 }
 
-.title-contact{
+.title-contact {
+    margin-bottom: 15px;
     font-size: 1.3rem;
     color: #fff;
-    text-align: center;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     gap: 10px;
 }
 
-.label-title{
+.label-title {
     margin-top: 10px;
     color: #fff;
 }
 
-.input-contact{
+.input-contact {
     padding: 5px;
     outline: none;
     border: none;
     color: #fff;
-    background-color: #1c1c1c;  
+    background-color: #1c1c1c;
     transition: 200ms;
 }
 
-.input-contact:focus{
+.input-contact:focus {
     border-bottom: 2px solid #ffd64a;
 }
 
-.input-textarea{
+.input-textarea {
     color: #fff;
-    background-color: #1c1c1c;  
+    background-color: #1c1c1c;
     padding: 5px;
 }
 
-input[type=button]{
+input[type=button] {
     margin-top: 10px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0);
     border: 3px solid #ffd64a;
     font-size: 1.1rem;
+    width: 120px;
     color: #ffff;
     cursor: pointer;
     transition: 200ms;
 }
 
-.icons-contact{
+.icons-contact {
     display: flex;
     padding: 20px 0 10px 0;
-    gap: 5px;
+    gap: 10px;
 }
 
-.info{
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     color: #fff;
     font-size: 0.5rem;
+}
+
+.map {
+    height: 400px;
+    width: 600px;
+}
+
+.icon-map {
+    display: block;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(10deg) brightness(100%) contrast(103%);
+    background-image: url('../../assets/icons/map-marker.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.icon-phone{
+    display: block;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(10deg) brightness(100%) contrast(103%);
+    background-image: url('../../assets/icons/cellphone.svg');
+    width: 20px;
+    height: 20px;
 }

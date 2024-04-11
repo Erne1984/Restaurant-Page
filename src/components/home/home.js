@@ -1,5 +1,6 @@
 import './home.css';
 
+const containerHome = document.createElement("div");
 const divHome = document.createElement("div");
 const title = document.createElement("h1");
 const content = document.createElement("p");
@@ -7,6 +8,8 @@ const btnBox = document.createElement("div");
 const button = document.createElement("button");
 
 // Editing Elemets
+
+containerHome.classList.add("container-home");
 
 divHome.classList.add("home");
 
@@ -26,8 +29,9 @@ button.textContent = "Menu"
 
 // Appending Elemets
 
+containerHome.appendChild(divHome);
 divHome.appendChild(title);
 divHome.appendChild(content);
 divHome.appendChild(btnBox);
 
-export default divHome;
+export default containerHome;

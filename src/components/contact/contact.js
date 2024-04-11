@@ -1,5 +1,6 @@
 import './contact.css';
 
+const divContainer = document.createElement("div");
 const divContact = document.createElement("div");
 
 const divMaps = document.createElement("div");
@@ -7,8 +8,8 @@ const titleContact = document.createElement("h2");
 const divIconsContact = document.createElement("div");
 const spanMap = document.createElement("small");
 const spanPhone  = document.createElement("small");
-const iconMap = document.createElement("i");
-const iconPhone = document.createElement("i");
+const iconMap = document.createElement("span");
+const iconPhone = document.createElement("span");
 const titleReachtOut = document.createElement("h2");
 
 const form = document.createElement("form");
@@ -22,6 +23,8 @@ const inputMsg = document.createElement("textarea");
 const inputButton = document.createElement("input");
 
 // Editing Elements
+divContainer.classList.add("container-contact");
+
 divContact.classList.add("contact");
 
 // Map Side
@@ -32,11 +35,20 @@ divIconsContact.classList.add("icons-contact")
 titleReachtOut.textContent = "Contato Direto";
 titleReachtOut.classList.add("title-contact");
 
-spanMap.textContent = "Red Square, Moskva, Rússia, 109012";
+iconMap.classList.add("icon-map");
+
 spanMap.classList.add("info");
 
-spanPhone.textContent = "+7 499 1917-1917";
+spanMap.textContent = "Red Square, Moskva, Rússia, 109012";
+spanMap.appendChild(iconMap);
+
+iconPhone.classList.add("icon-phone");
+
 spanPhone.classList.add("info");
+spanPhone.textContent = "+7 499 1917-1917";
+spanPhone.appendChild(iconPhone)
+
+local.classList.add("map");
 
 
 // Form Side
@@ -84,5 +96,6 @@ form.appendChild(inputMsg);
 form.appendChild(inputButton);
 divContact.appendChild(form);
 divContact.appendChild(divMaps);
+divContainer.appendChild(divContact);
 
-export default divContact;
+export default divContainer;
