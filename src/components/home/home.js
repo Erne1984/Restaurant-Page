@@ -6,6 +6,8 @@ const content = document.createElement("p");
 const btnBox = document.createElement("div");
 const button = document.createElement("button");
 
+// Editing Elemets
+
 divHome.classList.add("home");
 
 title.innerHTML = "Soviet Cuisine ☭";
@@ -22,6 +24,7 @@ btnBox.appendChild(button)
 button.classList.add("btn-menu");
 button.textContent = "Menu"
 
+// Appending Elemets
 
 divHome.appendChild(title);
 divHome.appendChild(content);

@@ -4,8 +4,11 @@ import home from './components/home/home'
 import menu from './components/menu/menu'
 import about from './components/about/about'
 
+import contact from "./components/contact/contact"
+
 const navTabs = document.querySelectorAll(".tab");
 const mainDiv = document.querySelector("#content");
+const footerSection = document.querySelector("#footer");
 
 // Logic for changing tabs
 navTabs.forEach((tab) => {
@@ -32,4 +35,5 @@ navTabs.forEach((tab) => {
 
 
 
-mainDiv.appendChild(home)
+mainDiv.appendChild(home);
+footerSection.appendChild(contact);
