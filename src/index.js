@@ -1,8 +1,9 @@
 import "./style.css";
 
-import home from './components/home/home'
-import menu from './components/menu/menu'
-import about from './components/about/about'
+import home from './components/home/home';
+import menu from './components/menu/menu';
+import about from './components/about/about';
+import footer from './components/footer/footer';
 
 import contact from "./components/contact/contact"
 
@@ -37,3 +38,4 @@ navTabs.forEach((tab) => {
 
 mainDiv.appendChild(home);
 footerSection.appendChild(contact);
+footerSection.appendChild(footer);
