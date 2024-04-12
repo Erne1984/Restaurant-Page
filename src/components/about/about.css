@@ -1,9 +1,19 @@
 .about{
     display: flex;
+    justify-content: space-around;
+    padding: 5rem 5px;
     background-color: #fff;
 }
 
 .img-about{
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background: url("../../assets/imgs/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-about{
+    width: 300px;
 }

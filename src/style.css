@@ -16,22 +16,28 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
     position: relative;
     z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 0 auto;
 }
 
-header .logo{
+.container-header .logo{
     height: 94px;
     width: 140px;
     cursor: pointer;
 }
 
-header nav{
+.container-header nav{
     display: flex;
     gap: 3px;
     text-align: center;
@@ -40,7 +46,7 @@ header nav{
     list-style: none;
 }
 
-header nav li{
+.container-header nav li{
     cursor: pointer;
     border: none;
     color: #ffff;
@@ -48,11 +54,11 @@ header nav li{
     padding: 5px;    
 }
 
-header nav li:hover{
+.container-header nav li:hover{
     color: #ffd64a;
 }
 
-.tab-actived{
+.container-header .tab-actived{
     color: #ffd64a;
     border-bottom: 2px solid #ffd64a;
 }

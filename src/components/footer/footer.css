@@ -31,7 +31,7 @@
 
 .row-icons{
     display: flex;
-    padding-top: 5px;
+    padding-top: 10px;
     gap: 3px;
 }
 
@@ -39,6 +39,12 @@
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(10deg) brightness(100%) contrast(103%);
     width: 20px;
     height: 20px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.icons-row:hover{
+    filter: invert(76%) sepia(62%) saturate(468%) hue-rotate(350deg) brightness(104%) contrast(104%);
 }
 
 .icon-face{
