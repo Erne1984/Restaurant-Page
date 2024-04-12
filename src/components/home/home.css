@@ -1,12 +1,14 @@
 .container-home{
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 70vh;
+    width: 100%;
 }
 
-/*.home{
- 
-}*/
+.home{
+ width: 85%;
+}
 
 h1{
     font-family: 'red_october';
