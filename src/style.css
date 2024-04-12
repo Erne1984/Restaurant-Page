@@ -63,7 +63,7 @@ header {
     border-bottom: 2px solid #ffd64a;
 }
 
-.content {
+.hero {
     position: relative;
     z-index: 2;
     font-family: "fyodor";
