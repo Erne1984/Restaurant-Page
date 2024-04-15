@@ -1,0 +1,14 @@
+.container-menu{
+    height: 100%;
+    width: 100%;
+}
+
+.title-menu{
+    padding: 2rem 0;
+}
+
+.box-menu{
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    background-color: #fff;
+}
