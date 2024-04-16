@@ -7,8 +7,93 @@
     padding: 2rem 0;
 }
 
+.container-box-menu{
+    display: flex;
+    justify-content: center;
+}
+
 .box-menu{
     display: grid;
-    grid-template-columns: repeat(auto, 1fr);
-    background-color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 2rem 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-img{
+    width: 80%;
+    height: 200px;
+}
+
+.food-one{
+    background: url("../../assets/imgs/recipes/kasha.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.food-two{
+    background: url("../../assets/imgs/recipes/stroganoff.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.food-three{
+    background: url("../../assets/imgs/recipes/syrniki.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe-menu{
+    margin-top: 25px;
+    color: #ffd64a;
+}
+
+.recipe-menu:hover{
+    cursor: pointer;
+    color: #ffd64a;
+}
+
+.text-recipes{
+    font-size: 0.7rem;
+    color: #fff;
+    margin: 16px 0;
+}
+
+.card button{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #ffd64a;
+    font-size: 1rem;
+    color: #ffff;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.card button:hover{
+    border-color: #CC0000;
+    background-color: #ffd64a;
+    color: #CC0000;
+}
+
+@media screen and (max-width: 1135px) {
+    .box-menu {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .card{
+        padding: 1rem 0;
+    }
 }
